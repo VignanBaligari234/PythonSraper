@@ -1,0 +1,31 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python URLs</title>
+    <style>
+      /* CSS styles for list items */
+      li {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        list-style-type: square;
+      }
+      /* CSS styles for links */
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Python URLs:</h1>
+    <ul>
+      {% for url in urls %}
+        <li><a href="{{ url }}">{{ url }}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
